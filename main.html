@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/vendor/three.r119.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+</head>
+
+<body>
+  <div class="hero">
+    <section class="project-section">
+      <div id="your-element-selector"></div>
+      <div class="overlay">
+        <h1>AR/VR Project</h1>
+        <p class="subheading">Exploring new realms of digital immersion</p>
+      </div>
+      <div class="icons">
+        <img src="virtual-tour (1).png" alt="AR Icon" class="ar-icon">
+        <img src="virtual-tour.png" alt="VR Icon" class="vr-icon">
+      </div>
+  </div>
+  </section>
+
+
+
+
+  <section class="about-us">
+    <div id="birds"></div>
+    <div class="about-content">
+      <h2>About Us</h2>
+      <p>We are a passionate team dedicated to pushing the boundaries of augmented reality (AR) and virtual reality (VR)
+        experiences. Our current projects focus on creating immersive AR solutions that bring digital assets to life,
+        enhancing user interaction and engagement. Through our innovative AR/VR projects, we aim to revolutionize how
+        users experience and interact with digital content on the web.</p>
+    </div>
+  </section>
+  <div class="main">
+    <div class="asset-container">
+      <div class="iframe-container">
+        <iframe id="myIframe"
+          src="https://api.echo3d.com/webar?key=flat-lab-6777&entry=bbe7cbdc-1b8b-493b-b9d5-dc8fdcd6420a"></iframe>
+      </div>
+
+      <div class="content">
+        <h2>Asset 1</h2>
+        <p>Description for Asset 1.</p>
+        <button class="qr-button"
+          onclick="showQRCode('https://api.echo3d.com/webar?key=flat-lab-6777&entry=bbe7cbdc-1b8b-493b-b9d5-dc8fdcd6420a')">Show
+          QR Code</button>
+      </div>
+    </div>
+
+    <!-- Asset 2 -->
+    <div class="asset-container">
+      <div class="iframe-container">
+        <iframe
+          src="https://api.echo3d.com/webar?key=flat-lab-6777&entry=1ec26e8e-62cc-4d3f-a235-640f0a34669d"></iframe>
+      </div>
+      <div class="content">
+        <h2>Asset 2</h2>
+        <p>Description for Asset 2.</p>
+        <button class="qr-button"
+          onclick="showQRCode('https://api.echo3d.com/webar?key=flat-lab-6777&entry=1ec26e8e-62cc-4d3f-a235-640f0a34669d')">Show
+          QR Code</button>
+      </div>
+    </div>
+
+    <!-- Asset 3 -->
+    <div class="asset-container">
+      <div class="iframe-container">
+        <iframe
+          src="https://api.echo3d.com/webar?key=flat-lab-6777&entry=a1b87227-7bd2-4b0e-a46c-4f469332e346"></iframe>
+      </div>
+      <div class="content">
+        <h2>Asset 3</h2>
+        <p>Description for Asset 3.</p>
+        <button class="qr-button"
+          onclick="showQRCode('https://api.echo3d.com/webar?key=flat-lab-6777&entry=a1b87227-7bd2-4b0e-a46c-4f469332e346')">Show
+          QR Code</button>
+      </div>
+    </div>
+
+    <!-- Asset 4 -->
+    <div class="asset-container">
+      <div class="iframe-container">
+        <iframe
+          src="https://api.echo3d.com/webar?key=flat-lab-6777&entry=b96813c6-8562-42bd-b89f-ec397c1764fe"></iframe>
+
+      </div>
+      <div class="content">
+        <h2>Asset 4</h2>
+        <p>Description for Asset 4.</p>
+        <button class="qr-button"
+          onclick="showQRCode('https://api.echo3d.com/webar?key=flat-lab-6777&entry=b96813c6-8562-42bd-b89f-ec397c1764fe')">Show
+          QR Code</button>
+      </div>
+    </div>
+    <script>
+
+    </script>
+
+    <!-- Asset 5 -->
+    <div class="asset-container">
+      <div class="iframe-container">
+        <iframe src="https://api.echo3d.com/webar?key=flat-lab-6777&entry=b96813c6-8562-42bd-b89f-ec397c1764f"></iframe>
+      </div>
+      <div class="content">
+        <h2>Asset 5</h2>
+        <p>Description for Asset 5.</p>
+        <button class="qr-button"
+          onclick="showQRCode('https://api.echo3d.com/webar?key=flat-lab-6777&entry=b96813c6-8562-42bd-b89f-ec397c1764f')">Show
+          QR Code</button>
+      </div>
+    </div>
+
+    <!-- Asset 6 -->
+    <div class="asset-container">
+      <div class="iframe-container">
+        <iframe
+          src="https://api.echo3d.com/webar?key=flat-lab-6777&entry=aad81953-5c20-4591-abfc-48181b5b5b63"></iframe>
+      </div>
+      <div class="content">
+        <h2>Asset 6</h2>
+        <p>Description for Asset 6.</p>
+        <button class="qr-button"
+          onclick="showQRCode('https://api.echo3d.com/webar?key=flat-lab-6777&entry=aad81953-5c20-4591-abfc-48181b5b5b63')">Show
+          QR Code</button>
+      </div>
+    </div>
+
+    <!-- Asset 7 -->
+    <div class="asset-container">
+      <div class="iframe-container">
+        <iframe
+          src="https://api.echo3d.com/webar?key=flat-lab-6777&entry=f4ac5ef3-c554-4f50-952f-7d3e8e4e1212"></iframe>
+      </div>
+      <div class="content">
+        <h2>Asset 7</h2>
+        <p>Description for Asset 7.</p>
+        <button class="qr-button"
+          onclick="showQRCode('https://api.echo3d.com/webar?key=flat-lab-6777&entry=f4ac5ef3-c554-4f50-952f-7d3e8e4e1212')">Show
+          QR Code</button>
+      </div>
+    </div>
+
+    <!-- Asset 8 -->
+    <div class="asset-container">
+      <div class="iframe-container">
+        <iframe
+          src="https://api.echo3d.com/webar?key=flat-lab-6777&entry=ecd849e4-ccf8-4fac-a4c5-8303d87c4a02"></iframe>
+      </div>
+      <div class="content">
+        <h2>Asset 8</h2>
+        <p>Description for Asset 8.</p>
+        <button class="qr-button"
+          onclick="showQRCode('https://api.echo3d.com/webar?key=flat-lab-6777&entry=abbd601a-a223-456e-b923-57f1894e4962')">Show
+          QR Code</button>
+      </div>
+    </div>
+
+    <!-- Modal for QR Code -->
+    <div id="qrModal" class="modal">
+      <div class="modal-content">
+        <h3>Scan this QR Code</h3>
+        <img id="qrImage" src="" alt="QR Code">
+        <button class="close-button" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script>
+    VANTA.CLOUDS({
+      el: "#your-element-selector",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00
+    });
+    VANTA.BIRDS({
+      el: "#birds",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00
+    })
+  </script>
+
+</body>
+
+</html>

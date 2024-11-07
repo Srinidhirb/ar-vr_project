@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  #your-element-selector {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .project-section {
+position: relative;
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+
+.background-image {
+position: relative;
+width: 100%;
+height: 100%;
+background-image: url('path_to_your_image.png');
+background-size: cover;
+background-position: center;
+filter: blur(5px);
+}
+
+.overlay {
+position: absolute;
+top: 25%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: rgb(0, 0, 0);
+font-family: 'Arial', sans-serif;
+}
+
+h1 {
+font-size: 4rem;
+font-weight: bold;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+margin: 0;
+animation: fadeIn 2s ease-out;
+}
+
+.subheading {
+font-size: 1.5rem;
+margin-top: 10px;
+animation: fadeIn 3s ease-out;
+}
+
+.icons {
+position: absolute;
+bottom: 80px;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.ar-icon, .vr-icon {
+width: 50px;
+height: 50px;
+margin: 0 15px;
+opacity: 0.8;
+transition: transform 0.3s, opacity 0.3s;
+}
+
+.ar-icon:hover, .vr-icon:hover {
+transform: scale(1.2);
+opacity: 1;
+}
+
+/* Animation for fading text */
+
+
+@media (max-width: 768px) {
+h1 {
+  font-size: 2.5rem;
+}
+.subheading {
+  font-size: 1rem;
+}
+}
+
+  .hero {
+    height: 100vh;
+  }
+  .asset-container {
+          display: flex;
+          align-items: center;
+          background-color: white;
+          padding: 20px;
+          margin-bottom: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          width: 50%;
+          max-width: 800px;
+      }
+
+      .iframe-container {
+          width: 300px;
+          height: 300px;
+          overflow: hidden;
+          border-radius: 8px;
+          margin-right: 20px;
+      }
+
+      iframe {
+          width: 100%;
+          height: 100%;
+          border: none;
+      }
+
+      .content {
+          flex: 1;
+      }
+
+      h2 {
+          margin: 0 0 10px;
+          color: #333;
+      }
+
+      p {
+          margin: 0 0 20px;
+          color: #666;
+      }
+
+      .qr-button {
+          padding: 10px 20px;
+          background-color: #333;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+
+      .qr-button:hover {
+          background-color: #555;
+      }
+
+      /* Modal styling */
+      .modal {
+          display: none;
+          position: fixed;
+     
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+          width: 100%;
+         
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.7);
+          justify-content: center;
+          align-items: center;
+      }
+
+      .modal-content {
+        max-width: 400px;
+          background-color: white;
+          padding: 20px;
+          border-radius: 8px;
+          text-align: center;
+          display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+      }
+
+      .close-button {
+          margin-top: 20px;
+          padding: 10px 20px;
+          background-color: #333;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+
+      .close-button:hover {
+          background-color: #555;
+      }
+     iframe#bottomRight-AR-QR{
+          display: none!important;
+      }
+      iframe.qrCode {
+          display: none!important;
+      }
+      .main{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .about-us {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+ flex-wrap: wrap-reverse;
+ gap: 30px;
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.about-content {
+  flex: 2;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+#birds{
+  width: 400px;
+  height: 400px;
+ 
+}
+#birds canvas {
+  position: relative!important;
+  border-radius: 16px!important;
+}
+@media screen and (max-width:600px) {
+  .main{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .asset-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+  }
+}
